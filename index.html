@@ -12,18 +12,23 @@
         <!-- inicio menu superior -->
         <nav id="accessibility" class="menu__top">
             <ul>
-                <li id="accessibility__deuteranopia">
-                    <a  href="#">
+                <li >
+                    <a  href="#" onclick="changeId('#')">
+                        nada
+                    </a>
+                </li>
+                <li >
+                    <a  href="#accessibility__deuteranopia" onclick="changeId('accessibility__deuteranopia')">
                         Deuteranopia
                     </a>
                 </li>
                 <li>
-                    <a href="accessibility__protanopia">
+                    <a href="#accessibility__protanopia" onclick="changeId('accessibility__protanopia')">
                         Protanopia
                     </a>
                 </li>
                 <li>
-                    <a href="accessibility__tritanopia">
+                    <a href="#accessibility__tritanopia" onclick="changeId('accessibility__tritanopia')">
                         Tritanopia
                     </a>
                 </li>
@@ -36,7 +41,7 @@
                 <li>Destinos</li>
             </ul>
             <figure>
-                <img src="./images/logo_size_invert.jpg" alt="logotico com o nome traveller">
+                <img src="./images/logo2.png" alt="logotico com o nome traveller">
             </figure>
             <ul>
                 <li>Planeje sua Viagem</li>
@@ -214,5 +219,16 @@
     <footer>
 
     </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
