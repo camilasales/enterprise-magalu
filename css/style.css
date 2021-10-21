@@ -80,6 +80,10 @@ header section{
     
 }
 
+.image__pcd{
+    display: none;
+}
+
 header section figure{
     display: flex;
     justify-content: end;
@@ -223,11 +227,17 @@ button{
     font-size: 15px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 /* inicio deuteranopia */
-#accessibility__deuteranopia:target .color__text__yellow{
+#accessibility__deuteranopia:target .color__text__yellow,
+#accessibility__tritanopia:target .menu__top ul li:hover{
     color: #e8cf1f;
 }
-#accessibility__deuteranopia:target .color__background__yellow, input[type="radio"]:checked+label{
+#accessibility__deuteranopia:target .color__background__yellow, 
+#accessibility__deuteranopia:target input[type="radio"]:checked+label{
     background-color: #e8cf1f;
 }
 #accessibility__deuteranopia:target .color__text__lilac{
@@ -239,10 +249,12 @@ button{
 /* fim deuteranopia */
 
 /* inicio protanopia */
-#accessibility__protanopia:target .color__text__yellow{
+#accessibility__protanopia:target .color__text__yellow,
+#accessibility__tritanopia:target .menu__top ul li:hover{
     color: #ddc300;
 }
-#accessibility__protanopia:target .color__background__yellow, input[type="radio"]:checked+label{
+#accessibility__protanopia:target .color__background__yellow,
+#accessibility__protanopia:target input[type="radio"]:checked+label{
     background-color: #ddc300;
 }
 #accessibility__protanopia:target .color__text__lilac{
@@ -254,10 +266,12 @@ button{
 /* fim protanopia */
 
 /* inicio protanopia */
-#accessibility__tritanopia:target .color__text__yellow, .menu__top ul li:hover {
+#accessibility__tritanopia:target .color__text__yellow, 
+#accessibility__tritanopia:target .menu__top ul li:hover {
     color: #ffb4a9;
 }
-#accessibility__tritanopia:target .color__background__yellow, input[type="radio"]:checked+label{
+#accessibility__tritanopia:target .color__background__yellow, 
+#accessibility__tritanopia:target input[type="radio"]:checked+label{
     background-color: #ffb4a9;
 }
 #accessibility__tritanopia:target .color__text__lilac{
@@ -265,6 +279,12 @@ button{
 }
 #accessibility__tritanopia:target .color__background__lilac{
     background-color: #00384f;
+}
+#accessibility__tritanopia:target .image__pcd{
+    display: block;
+}
+#accessibility__tritanopia:target .image__default{
+    display: none;
 }
 /* fim protanopia */
 
