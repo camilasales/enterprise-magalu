@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="color__background__lilac">
+        <!-- inicio menu superior -->
+        <nav id="accessibility" class="menu__top">
+            <ul>
+                <li id="accessibility__deuteranopia">
+                    <a  href="#">
+                        Deuteranopia
+                    </a>
+                </li>
+                <li>
+                    <a href="accessibility__protanopia">
+                        Protanopia
+                    </a>
+                </li>
+                <li>
+                    <a href="accessibility__tritanopia">
+                        Tritanopia
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu__top">
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Destinos</li>
+            </ul>
+            <figure>
+                <img src="./images/logo_size_invert.jpg" alt="logotico com o nome traveller">
+            </figure>
+            <ul>
+                <li>Planeje sua Viagem</li>
+                <li>Contato</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+        <!-- fim menu superior -->
+
+        <!-- inicio filtros de busca -->
+        <section>
+            <h1 class="color__text__yellow">HOSPEDAGEM</h1>
+            <figure>
+                <img src="./images/undraw_My_current_location_re_whmt.svg" alt="logotico com o nome traveller">
+            </figure>
+            <menu class="acommodation__filter">
+                <p>Selecione o tipo de viagem</p>
+                <input type="radio" id="type-travel-travel" name="type-travel" value="type-travel-travel" checked="checked">
+                <label for="type-travel-travel">Viagem</label>
+                
+                <input type="radio" id="type-travel-tourism" name="type-travel" value="type-travel-tourism" >
+                <label for="type-travel-tourism">Turismo </label>
+
+                <input type="radio" id="type-travel-work" name="type-travel" value="type-travel-work">
+                <label for="type-travel-work">Trabalho </label>
+            </menu>
+            <menu class="acommodation__filter">
+                <div>
+                    <label for="filter-state">Selecione a localidade</label>
+                    <select id="filter-state" required>
+                        <option value="0">Selecione uma opção</option>
+                        <option value="AC">
+                            Acre
+                        </option>
+                        <option value="AL">
+                            Alagoas
+                        </option>
+                        <option value="AP">
+                            Amapá
+                        </option>
+                        <option value="AM">
+                            Amazonas
+                        </option>
+                        <option value="BA">
+                            Bahia
+                        </option>
+                        <option value="CE">
+                            Ceará
+                        </option>
+                        <option value="ES">
+                            Espírito Santo
+                        </option>
+                        <option value="GO">
+                            Goiás
+                        </option>
+                        <option value="MA">
+                            Maranhão
+                        </option>
+                        <option value="MT">
+                            Mato Grosso
+                        </option>
+                        <option value="MS">
+                            Mato Grosso do Sul
+                        </option>
+                        <option value="MG">
+                            Minas Gerais
+                        </option>
+                        <option value="PA">
+                            Pará
+                        </option>
+                        <option value="PB">
+                            Paraíba
+                        </option>
+                        <option value="PR">
+                            Paraná
+                        </option>
+                        <option value="PE">
+                            Pernambuco
+                        </option>
+                        <option value="PI">
+                            Piauí
+                        </option>
+                        <option value="RJ">
+                            Rio de Janeiro
+                        </option>
+                        <option value="RN">
+                            Rio Grande do Norte
+                        </option>
+                        <option value="RS">
+                            Rio Grande do Sul
+                        </option>
+                        <option value="RO">
+                            Rondônia
+                        </option>
+                        <option value="RR">
+                            Roraima
+                        </option>
+                        <option value="SC">
+                            Santa Catarina
+                        </option>
+                        <option value="SP">
+                            São Paulo
+                        </option>
+                        <option value="SE">
+                            Sergipe
+                        </option>
+                        <option value="TO">
+                            Tocantins
+                        </option>
+                        <option value="DF">
+                            Distrito Federal
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="filter-date-time-checkin">Selecione a data de chegada</label>
+                    <input type="datetime-local" id="filter-date-time-checkin"
+                        name="filter-date-time-checkin" value="2021-10-01T00:00"
+                        min="2021-10-15T00:00" max="2021-12-00T00:00">
+                </div>
+                <div> 
+                    <label for="filter-date-time-checkout">Selecione a data de saída</label>
+                    <input type="datetime-local" id="filter-date-time-checkout"
+                        name="filter-date-time-checkout" value="2021-10-01T00:00"
+                        min="2021-10-15T00:00" max="2021-12-00T00:00">
+                </div>
+            </menu>
+        </section>
+         <!-- fim filtros de busca -->
+    </header>
+    <main>
+        <h2 class="color__text__lilac">São Paulo -</h2>
+        <section class="accommodation__locations__list">
+            <div class="accommodation__location">
+                <div class="accommodation__location__text">
+                    <div class="accommodation__location__text__classification">
+                        <strong>R$ 280,00</strong>
+                        <strong><img src="./images/star-icon.png" alt="estrela de calssificação">4.9</strong>
+                    </div>
+                    <div>
+                        <span>IBIS Styles São Paulo Anhembi</span>
+                        <button class="color__background__yellow">VER DETALHES</button>
+                    </div>
+                </div>
+                <img class="accommodation__location__image" src="./images/hotel-ibis.jpg" alt="">
+            </div>
+            <div class="accommodation__location">
+                <div class="accommodation__location__text">
+                    <div class="accommodation__location__text__classification">
+                        <strong>R$ 420,00</strong>
+                        <strong><img src="./images/star-icon.png" alt="estrela de calssificação">4.9</strong>
+                    </div>
+                    <div>
+                        <span>Confort Ibirapuera</span>
+                        <button class="color__background__yellow">VER DETALHES</button>
+                    </div>
+                </div>
+                <img class="accommodation__location__image" src="./images/hotel-confort.jpeg" alt="">
+            </div>
+            <div class="accommodation__location">
+                <div class="accommodation__location__text">
+                    <div class="accommodation__location__text__classification">
+                        <strong>R$ 369,00</strong>
+                        <strong><img src="./images/star-icon.png" alt="estrela de calssificação">4.9</strong>
+                    </div>
+                    <div>
+                        <span>Mercure São Paulo Pamplona</span>
+                        <button class="color__background__yellow">VER DETALHES</button>
+                    </div>
+                </div>
+                <img class="accommodation__location__image" src="./images/hotel-mercure.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
